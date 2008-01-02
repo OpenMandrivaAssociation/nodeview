@@ -11,6 +11,7 @@ BuildRequires:	db4.2-devel
 BuildRequires:	qt3-devel
 BuildRequires:	ImageMagick dos2unix
 BuildRequires:	kdelibs-devel
+BuildRoot:	%{_tmppath}/%{name}-buildroot-%{version}
 	
 %description
 The Openkiosk system is basically composed of two parts. The first program 
