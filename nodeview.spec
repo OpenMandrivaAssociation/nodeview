@@ -52,17 +52,6 @@ install -m0644 nodeview-48x48.png %{buildroot}%{_liconsdir}/%{name}.png
 convert -size 32x32 nodeview-48x48.png %{buildroot}%{_iconsdir}/%{name}.png
 convert -size 16x16 nodeview-48x48.png %{buildroot}%{_miconsdir}/%{name}.png
 
-install -d %{buildroot}/%{_menudir}
-cat > %{buildroot}%{_menudir}/%{name} <<EOF
-?package(%{name}): \
-command="%{_bindir}/%{name}" \
-title="NodeView" \
-longtitle="The central control program of the OpenKiosk system" \
-needs="x11" \
-icon="%{name}.png" \
-section="System/Configuration/Networking" \
-xdg="true"
-EOF
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/%{name}.desktop << EOF
@@ -96,7 +85,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr (-,root,root)
 %doc AUTHORS BUGS COPYING ChangeLog README* docs/*
 %{_bindir}/%{name}
-%{_menudir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_iconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
