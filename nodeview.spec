@@ -1,7 +1,7 @@
 Summary:	OpenKiosk central server containing the client information database 
 Name:		nodeview
 Version:	2.0.3
-Release:	%mkrel 3
+Release:	%mkrel 5
 License:	GPL
 Group:		Networking/Other
 URL:		http://openkiosk.sourceforge.net			
