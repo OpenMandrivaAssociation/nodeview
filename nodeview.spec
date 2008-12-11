@@ -9,7 +9,7 @@ Source0:	http://prdownloads.sourceforge.net/openkiosk/%{name}-%{version}.tar.bz2
 Source1:	nodeview-48x48.png
 BuildRequires:	db4.2-devel
 BuildRequires:	qt3-devel
-BuildRequires:	ImageMagick dos2unix
+BuildRequires:	imagemagick dos2unix
 BuildRequires:	kdelibs-devel
 BuildRoot:	%{_tmppath}/%{name}-buildroot-%{version}
 	
