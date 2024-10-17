@@ -4,7 +4,7 @@ Version:	2.0.3
 Release:	%mkrel 6
 License:	GPL
 Group:		Networking/Other
-URL:		http://openkiosk.sourceforge.net			
+URL:		https://openkiosk.sourceforge.net			
 Source0:	http://prdownloads.sourceforge.net/openkiosk/%{name}-%{version}.tar.bz2
 Source1:	nodeview-48x48.png
 BuildRequires:	db4.2-devel
