@@ -7,6 +7,11 @@ Group:		Networking/Other
 URL:		https://openkiosk.sourceforge.net			
 Source0:	http://prdownloads.sourceforge.net/openkiosk/%{name}-%{version}.tar.bz2
 Source1:	nodeview-48x48.png
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	db4.2-devel
 BuildRequires:	qt3-devel
 BuildRequires:	imagemagick dos2unix
